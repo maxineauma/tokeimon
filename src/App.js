@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
 import Home from './pages/Home';
@@ -12,7 +12,7 @@ const App = () => {
 
   return (
 
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Routes>
 
         <Route path="/" element={<Home />} exact />
