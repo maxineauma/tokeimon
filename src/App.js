@@ -11,7 +11,7 @@ const App = () => {
 
   return (
 
-    <BrowserRouter>
+    <BrowserRouter basename="/tokeimon/">
       <Routes>
 
         <Route path="/" element={<Home />} exact />
