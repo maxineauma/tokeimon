@@ -19,6 +19,7 @@ class PokemonTeammates extends React.Component {
       case "Tapu Lele":
       case "Tapu Fini":
       case "Tapu Koko":
+      case "Tapu Bulu":
         return name.replace(" ", "-");
 
       case "Mr. Mime":
