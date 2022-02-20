@@ -15,3 +15,5 @@ Alternatively:
 * Load a `.json` file, scraped with [usage scraper](https://github.com/maxsaystransrights/usage-scraper) into `./src/data` and re-name it to `usage-data.json`.
 * Run: `npm run build` and serve the `./build` directory with your HTTP server of choice.
     * With this method, you will not be able to load a new `.json` file until you re-build.
+
+* **Note**: Due to the nature of React state, `usage-data.json` is hot-swappable.
