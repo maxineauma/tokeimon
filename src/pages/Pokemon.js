@@ -1,41 +1,39 @@
-import React from 'react';
-import { useParams } from 'react-router';
+import React from "react";
+import { useParams } from "react-router";
 
-import Navbar from '../components/Navbar';
-import PokemonOverview from '../components/PokemonOverview';
+import Navbar from "../components/Navbar";
+import PokemonOverview from "../components/PokemonOverview";
 
-import { Layout } from 'antd';
-const { Header, Content } = Layout; 
+import { Layout } from "antd";
+const { Header, Content } = Layout;
 
-export default function Pokemon () { 
+export default function Pokemon() {
+  const { id } = useParams();
 
-        const { id } = useParams();
+  return (
+    <>
+      <Layout>
+        <Header>
+          <Navbar />
+        </Header>
+      </Layout>
 
-        return( 
-
-            <>
-                <Layout>
-                    <Header>
-                        <Navbar/>
-                    </Header>
-                </Layout>
-
-                <Layout style={{
-                    padding: "2rem",
-                    width: "auto",
-                    minHeight: "100vh"
-                }}>
-                    <Content style={{
-                        padding: "3rem",
-                        backgroundColor: "#1F1F1F"
-                    }}>
-
-                        <PokemonOverview name={id} />
-
-                    </Content>
-                </Layout>
-            </>
-
-        )
-
+      <Layout
+        style={{
+          padding: "2rem",
+          width: "auto",
+          minHeight: "100vh",
+        }}
+      >
+        <Content
+          style={{
+            padding: "3rem",
+            backgroundColor: "#1F1F1F",
+          }}
+        >
+          <PokemonOverview name={id} />
+        </Content>
+      </Layout>
+    </>
+  );
 }
