@@ -23,7 +23,8 @@ class Searchbar extends React.Component {
                             width: "100%",
                             backgroundColor: "#F0F2F5",
                             padding: "1rem",
-                            borderRadius: "2px"
+                            borderRadius: "2px",
+                            color: "#000"
                         }}/>
                 </form>
             </>
