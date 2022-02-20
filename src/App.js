@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import {  Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom'
 import './App.css';
 
 import Home from './pages/Home';
@@ -11,7 +12,7 @@ const App = () => {
 
   return (
 
-    <BrowserRouter basename="/tokeimon/">
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
 
         <Route path="/" element={<Home />} exact />
@@ -21,7 +22,7 @@ const App = () => {
         <Route path="*" element={<Navigate to="/" />} />
 
       </Routes>
-    </BrowserRouter>
+    </Router>
 
   );
 
