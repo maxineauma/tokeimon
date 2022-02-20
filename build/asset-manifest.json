@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tokeimon/static/css/main.c325ef98.css",
+    "main.js": "/tokeimon/static/js/main.a589e135.js",
+    "index.html": "/tokeimon/index.html",
+    "main.c325ef98.css.map": "/tokeimon/static/css/main.c325ef98.css.map",
+    "main.a589e135.js.map": "/tokeimon/static/js/main.a589e135.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c325ef98.css",
+    "static/js/main.a589e135.js"
+  ]
+}
