@@ -1,5 +1,10 @@
 <h1 align="center" style="border-bottom: none !important; margin-bottom: 5px !important;">Smogon Usage Statistics Viewer</h1>
 
+<details>
+   <summary>Screenshot Preview</summary>
+   <img src="https://i.imgur.com/UzW4pec.jpg" alt="Landorus-T usage stats" />
+</details>
+
 ## Pre-installation
 * This depends on: [<a href="https://git-scm.com/download/win">latest Git</a>] [<a href="https://nodejs.org/en/">latest Node.js</a>]
 
